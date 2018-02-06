@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AbsolutDimension</string>
+    <string name="welcome">Welcome!</string>
+    <string name="nextPoint">What are the coordinates of the point </string>
+
+    <string name="one">1/30 37.5</string>
+    <string name="two">2/10 37.5</string>
+    <string name="three">3/10 12.5</string>
+    <string name="four">4/30 12.5</string>
+    <string name="five">5/40 12.5</string>
+    <string name="six">6/40 37.5</string>
+    <string name="seven">7/60 12.5</string>
+    <string name="eight">8/60 37.5</string>
+    <string name="nine">9/90 12.5</string>
+    <string name="ten">10/70 12.5</string>
+    <string name="eleven">11/70 37.5</string>
+    <string name="twelve">12/90 37.5</string>
+
+    <string-array name="questions_answers">
+        <item>@string/one</item>
+        <item>@string/two</item>
+        <item>@string/three</item>
+        <item>@string/four</item>
+        <item>@string/five</item>
+        <item>@string/six</item>
+        <item>@string/seven</item>
+        <item>@string/eight</item>
+        <item>@string/nine</item>
+        <item>@string/ten</item>
+        <item>@string/eleven</item>
+        <item>@string/twelve</item>
+    </string-array>
+</resources>

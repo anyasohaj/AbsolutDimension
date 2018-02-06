@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bagirapp.absolutdimension.StartActivity">
+
+    <ImageView
+        android:id="@+id/startImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/cube"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/interAct"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="#000000"
+        android:textSize="24sp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:textSize="32sp"
+        android:text="Start"
+        android:onClick="nextPoint"
+        />
+
+
+
+</LinearLayout>
