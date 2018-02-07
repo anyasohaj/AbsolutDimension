@@ -1,12 +1,11 @@
 package com.bagirapp.absolutdimension;
 
-import android.content.Context;
+
 import android.content.Intent;
-import android.graphics.Picture;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -27,14 +26,14 @@ public class Evaluate extends AppCompatActivity {
         ArrayList<ImageView> pics = new ArrayList<ImageView>();
         ImageView tick = new ImageView(this);
         ImageView cancel = new ImageView(this);
+        char tickAndCancel[] = new char[13];
 
 
         tick.setImageResource(R.drawable.ic_action_tick);
         cancel.setImageResource(R.drawable.ic_action_cancel);
 
-        for (int k=0; k<13; k++){
-            pics.add(cancel);
-            k++;
+        for (int k=0; k< tickAndCancel.length; k++){
+           tickAndCancel[k] = '\271';
         }
 
         // create the final message
@@ -42,15 +41,15 @@ public class Evaluate extends AppCompatActivity {
         TextView eval = (TextView) findViewById(R.id.evaluateText);
         TextView ques = (TextView) findViewById(R.id.questions);
         TextView ans = (TextView) findViewById(R.id.answers);
-        TextView tof = (TextView) findViewById(R.id.trueOrFalse);
+        ListView tof = (ListView) findViewById(R.id.trueOrFalse);
 
 
         String result = i.getIntExtra("point", point) +  " pontot szereztél.";
 
         for (int j = 0; j<13; j++) {
-            if (results[j]){ pics.add(j, tick);
+            if (results[j]){ pics.set(j, tick);
 
-            } else {helyesE[j] = "Hibás.";}
+            }
         }
 
         String helyesEString = helyesE[12] + "\n";
@@ -73,7 +72,7 @@ public class Evaluate extends AppCompatActivity {
         eval.setText(result);
         ques.setText(questionString);
         ans.setText(answerString);
-        tof.setText(helyesEString);
+
 
 
     }
